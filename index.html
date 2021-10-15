@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>EVA</title>
+<style >
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+.links{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	display: flex;
+}
+
+.links label{
+	padding: 10px 0;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: all .4s;
+	text-align: center;
+	font-family: 'Calibri';
+	font-size: 100%;
+	color: #fff;
+
+}
+.links label:hover{
+	background-color: rgba(255,255,255,.2);
+}
+
+.scroll{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.sections{
+
+	transition:  all .4s;
+}
+
+input{
+	display: none;
+}
+.bloco{
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#slide1{
+	background-color: #00aab9;
+}
+
+#slide2{
+	background-color: #00aab9;
+}
+#slide3{
+	background-color: #00aab9;
+}
+#slide4{
+	background-color: #00aab9;
+}
+
+
+#slide5{
+	background-color: #00aab9;
+}
+
+#rd_slide2:checked ~ .sections{
+	margin-top: -100vh;
+}
+#rd_slide3:checked ~ .sections{
+	margin-top: -200vh;
+}
+
+#rd_slide4:checked ~ .sections{
+	margin-top: -300vh;
+}
+
+#rd_slide5:checked ~ .sections{
+	margin-top: -400vh;
+}
+
+.bloco img{
+	width: 40%;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="links">
+	<label for="rd_slide1">EVA</label>
+	<label for="rd_slide2">Sobre</label>
+	<label for="rd_slide3">Atendimento</label>
+	<label for="rd_slide4">Recursos</label>
+	<label for="rd_slide5">Referências</label>
+</nav>
+
+
+<div class="scroll">
+	
+	<input type="radio" name="grupo" id="rd_slide1" checked="true">
+	<input type="radio" name="grupo" id="rd_slide2">
+	<input type="radio" name="grupo" id="rd_slide3">
+	<input type="radio" name="grupo" id="rd_slide4">
+	<input type="radio" name="grupo" id="rd_slide5">
+
+	<section class="sections">
+		<section class="bloco" id="slide1"><img src="slide1.png"></section>
+		<section class="bloco" id="slide2"><img src="slide2.png"></section>
+		<section class="bloco" id="slide3"><img src=""></section>
+		<section class="bloco" id="slide4"><img src=""></section>
+		<section class="bloco" id="slide5"><img src=""></section>
+	</section>
+
+
+</div>
+
+
+</body>
+</html>
