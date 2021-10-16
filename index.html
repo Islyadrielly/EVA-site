@@ -1,130 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-	<title>EVA</title>
-<style >
-	*{
-		margin: 0;
-		padding: 0;
-	}
-
-.links{
-	width: 100%;
-	height: 50px;
-	position: fixed;
-	display: flex;
-}
-
-.links label{
-	padding: 10px 0;
-	flex-grow: 1;
-	cursor: pointer;
-	transition: all .4s;
-	text-align: center;
-	font-family: 'Calibri';
-	font-size: 100%;
-	color: #fff;
-
-}
-.links label:hover{
-	background-color: rgba(255,255,255,.2);
-}
-
-.scroll{
-	display: flex;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-}
-
-.sections{
-
-	transition:  all .4s;
-}
-
-input{
-	display: none;
-}
-.bloco{
-	width: 100vw;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
-#slide1{
-	background-color: #00aab9;
-}
-
-#slide2{
-	background-color: #00aab9;
-}
-#slide3{
-	background-color: #00aab9;
-}
-#slide4{
-	background-color: #00aab9;
-}
-
-
-#slide5{
-	background-color: #00aab9;
-}
-
-#rd_slide2:checked ~ .sections{
-	margin-top: -100vh;
-}
-#rd_slide3:checked ~ .sections{
-	margin-top: -200vh;
-}
-
-#rd_slide4:checked ~ .sections{
-	margin-top: -300vh;
-}
-
-#rd_slide5:checked ~ .sections{
-	margin-top: -400vh;
-}
-
-.bloco img{
-	width: 40%;
-}
-
-
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVA</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  
+  <nav class="links">
+    <label for="rd_slide1">EVA</label>
+    <label for="rd_slide2">Sobre</label>
+    <label for="rd_slide3">Atendimento</label>
+    <label for="rd_slide4">Recursos</label>
+    <label for="rd_slide5">Referências</label>
+  </nav>
+  
+  <div class="scroll">
+    
+    <input type="radio" name="grupo" id="rd_slide1" checked="true">
+    <input type="radio" name="grupo" id="rd_slide2">
+    <input type="radio" name="grupo" id="rd_slide3">
+    <input type="radio" name="grupo" id="rd_slide4">
+    <input type="radio" name="grupo" id="rd_slide5">
+  
+    <section class="sections js_scroll">
+      <section class="bloco" id="slide1">
+      <div class="textos">
+        <h1>Eva, assistente virtual de agendamentos</h1>
+        <ul class="list">
+          <li>Atendimento via Telegram</li>
+          <li>Gerenciamento de horários</li>
+          <li>Armazenamento de dados</li>
+        </ul>        
+      </div>
+      <video playsinline="" autoplay="autoplay" muted="muted" loop="loop" poster="https://assets8.lottiefiles.com/render/kpxeebse.png" class="w-full rounded-t-lg" data-video="0"><source type="video/mp4" src="https://assets10.lottiefiles.com/render/kpxeebse.mp4"></video>
+        <!-- <img src="./img/eva-ola.png" alt="eva-ola"/> -->
+      </section>
 
-<nav class="links">
-	<label for="rd_slide1">EVA</label>
-	<label for="rd_slide2">Sobre</label>
-	<label for="rd_slide3">Atendimento</label>
-	<label for="rd_slide4">Recursos</label>
-	<label for="rd_slide5">Referências</label>
-</nav>
+
+      <section class="bloco js_scroll" id="slide2">
+        <p class="texto1Slide2">EVA é um bot criado para auxiliar em serviços de agendamento virtual para que seus clientes possam marcar ou desmarcar horários sem sair de casa.</p>
+
+        <div class="imagens">
+        <!-- <img class="eva2" src="./img/eva-2.png"/> -->
+        <video playsinline="" autoplay="autoplay" muted="muted" loop="loop" poster="https://assets10.lottiefiles.com/render/kpxh7edl.png" class="w-full rounded-t-lg eva2" data-video="1"><source type="video/mp4" src="https://assets7.lottiefiles.com/render/kpxh7edl.mp4"></video>
+        <div class="tecnologias">
+          <div class="dialogflow icon">
+            <img src="./img/dialogflow.png" alt="">
+            <p>DialogFlow</p>
+          </div>
+          <div class="JavaScript icon">
+            <!-- <img src="./img/javascript1.png" alt=""> -->
+            <img src="./img/javascript2.webp" alt="">
+            <p>JavaScript</p>
+          </div>
+          <div class="GoogleSheets icon">
+            <img src="./img/google-sheets.png" alt="">
+            <p>Google Sheets</p>
+          </div>
+        </div>          
+        </div>
 
 
-<div class="scroll">
-	
-	<input type="radio" name="grupo" id="rd_slide1" checked="true">
-	<input type="radio" name="grupo" id="rd_slide2">
-	<input type="radio" name="grupo" id="rd_slide3">
-	<input type="radio" name="grupo" id="rd_slide4">
-	<input type="radio" name="grupo" id="rd_slide5">
+        <p class="texto2Slide2">EVA é capaz de cadastrar clientes e realizar agendamentos atrelando as informações ao Google Sheets, onde é possível gerar relatório dos dados coletados.</p>
+      
+      </section>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          chat-icon="https:&#x2F;&#x2F;cdn.discordapp.com&#x2F;attachments&#x2F;854339807748292618&#x2F;898958367375122482&#x2F;ezgif.com-gif-maker.gif"
+          chat-title="EVA"
+          agent-id="2069f37c-d277-4540-9802-16e1c3fdee32"
+          language-code="pt-br"
+        ></df-messenger>
+      </section>
 
-	<section class="sections">
-		<section class="bloco" id="slide1"><img src="slide1.png"></section>
-		<section class="bloco" id="slide2"><img src="slide2.png"></section>
-		<section class="bloco" id="slide3"><img src=""></section>
-		<section class="bloco" id="slide4"><img src=""></section>
-		<section class="bloco" id="slide5"><img src=""></section>
-	</section>
+      <section class="texto1Slide3">
+        <p>Vamos conversar com a EVA?</p>
+        <br><br>
+        <!-- <iframe id="slide3"
+          allow="microphone;"
+          width="450"
+          height="530"
+          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+          chat-title="EVA"
+          agent-id="2069f37c-d277-4540-9802-16e1c3fdee32"
+          language-code="pt-br"
+        </iframe></section> -->
+      <section class="bloco js_scroll" id="slide4"><img src=""></section>
+      <section class="bloco js_scroll" id="slide5"><img src=""></section>
+  
+  
+  </div>
 
-
-</div>
-
-
+<!-- 
+    <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/2069f37c-d277-4540-9802-16e1c3fdee32">
+  </iframe> -->
+  <!-- <script type="module" src="./js/script.js"></script> -->
 </body>
 </html>
