@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+
+  </script>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +17,6 @@
   <nav class="links">
     <label for="rd_slide1">EVA</label>
     <label for="rd_slide2">Sobre</label>
-    <label for="rd_slide3">Atendimento</label>
-    <label for="rd_slide4">Recursos</label>
     <label for="rd_slide5">Referências</label>
   </nav>
   
@@ -23,11 +24,9 @@
     
     <input type="radio" name="grupo" id="rd_slide1" checked="true">
     <input type="radio" name="grupo" id="rd_slide2">
-    <input type="radio" name="grupo" id="rd_slide3">
-    <input type="radio" name="grupo" id="rd_slide4">
     <input type="radio" name="grupo" id="rd_slide5">
   
-    <section class="sections js_scroll">
+    <section class="sections">
       <section class="bloco" id="slide1">
       <div class="textos">
         <h1>Eva, assistente virtual de agendamentos</h1>
@@ -38,71 +37,73 @@
         </ul>        
       </div>
       <video playsinline="" autoplay="autoplay" muted="muted" loop="loop" poster="https://assets8.lottiefiles.com/render/kpxeebse.png" class="w-full rounded-t-lg" data-video="0"><source type="video/mp4" src="https://assets10.lottiefiles.com/render/kpxeebse.mp4"></video>
-        <!-- <img src="./img/eva-ola.png" alt="eva-ola"/> -->
-      </section>
+    </section>
 
 
-      <section class="bloco js_scroll" id="slide2">
+      <section class="bloco" id="slide2">
         <p class="texto1Slide2">EVA é um bot criado para auxiliar em serviços de agendamento virtual para que seus clientes possam marcar ou desmarcar horários sem sair de casa.</p>
 
         <div class="imagens">
-        <!-- <img class="eva2" src="./img/eva-2.png"/> -->
-        <video playsinline="" autoplay="autoplay" muted="muted" loop="loop" poster="https://assets10.lottiefiles.com/render/kpxh7edl.png" class="w-full rounded-t-lg eva2" data-video="1"><source type="video/mp4" src="https://assets7.lottiefiles.com/render/kpxh7edl.mp4"></video>
-        <div class="tecnologias">
-          <div class="dialogflow icon">
-            <img src="./img/dialogflow.png" alt="">
-            <p>DialogFlow</p>
-          </div>
-          <div class="JavaScript icon">
-            <!-- <img src="./img/javascript1.png" alt=""> -->
-            <img src="./img/javascript2.webp" alt="">
-            <p>JavaScript</p>
-          </div>
-          <div class="GoogleSheets icon">
-            <img src="./img/google-sheets.png" alt="">
-            <p>Google Sheets</p>
-          </div>
-        </div>          
+          <video playsinline="" autoplay="autoplay" muted="muted" loop="loop" poster="https://assets10.lottiefiles.com/render/kpxh7edl.png" class="w-full rounded-t-lg eva2" data-video="1"><source type="video/mp4" src="https://assets7.lottiefiles.com/render/kpxh7edl.mp4"></video>
+          <div class="tecnologias">
+            <div class="dialogflow icon">
+              <img src="./img/dialogflow.png" alt="">
+              <p>
+                DialogFlow
+              </p>
+            </div>
+            <div class="JavaScript icon">
+              <img src="./img/javascript2.webp" alt="">
+              <p>
+                JavaScript
+              </p>
+            </div>
+            <div class="GoogleSheets icon">
+              <img src="./img/google-sheets.png" alt="">
+              <p>
+                Google Sheets
+              </p>
+            </div>
+          </div>          
         </div>
 
-
-        <p class="texto2Slide2">EVA é capaz de cadastrar clientes e realizar agendamentos atrelando as informações ao Google Sheets, onde é possível gerar relatório dos dados coletados.</p>
-      
+        <p class="texto2Slide2">
+          EVA é capaz de cadastrar clientes e realizar agendamentos atrelando as informações ao Google Sheets, onde é possível gerar relatório dos dados coletados.
+        </p>
       </section>
+
+        <!-- chatbox -->
         <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-        <df-messenger
+        <div style=" display: grid; border-color: red;">
+          <df-messenger
           chat-icon="https:&#x2F;&#x2F;cdn.discordapp.com&#x2F;attachments&#x2F;854339807748292618&#x2F;898958367375122482&#x2F;ezgif.com-gif-maker.gif"
           chat-title="EVA"
           agent-id="2069f37c-d277-4540-9802-16e1c3fdee32"
           language-code="pt-br"
-        ></df-messenger>
+          >
+          </df-messenger>
+        </div>
       </section>
 
-      <section class="texto1Slide3">
-        <p>Vamos conversar com a EVA?</p>
-        <br><br>
-        <!-- <iframe id="slide3"
-          allow="microphone;"
-          width="450"
-          height="530"
-          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-          chat-title="EVA"
-          agent-id="2069f37c-d277-4540-9802-16e1c3fdee32"
-          language-code="pt-br"
-        </iframe></section> -->
-      <section class="bloco js_scroll" id="slide4"><img src=""></section>
-      <section class="bloco js_scroll" id="slide5"><img src=""></section>
+      <section class="bloco2" id="slide5" >
+        <div style="justify-content: center;" >
+          <marquee direction="up" style="margin-top: 1000px; height: 960px;" scrollamount= "10">
+          <p class="texto1Slide5" >
+            Desenvolvido por <br><br>
+            Adrielly Isly <br>
+            Felipe Botelho <br>
+            Gabriela Estrada <br>
+            Pedro Brilhadori <br>
+            Wallison Pereira
+          </p>
+        </marquee>
+          <p class="texto1Slide5"></p>
+
+        </div>
+      </section>
   
   
   </div>
 
-<!-- 
-    <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/2069f37c-d277-4540-9802-16e1c3fdee32">
-  </iframe> -->
-  <!-- <script type="module" src="./js/script.js"></script> -->
 </body>
 </html>
